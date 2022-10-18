@@ -10,8 +10,10 @@ void print_alphabet(void)
 
 	for (j = 'a'; j <= 'z'; j++)
 	{
-		for (i = 0; i <= 10; i++)
+		for (n = 0; n <= 10; n++)
 			_putchar(j);
+
+
 		_putchar('\n');
 	}
 }
