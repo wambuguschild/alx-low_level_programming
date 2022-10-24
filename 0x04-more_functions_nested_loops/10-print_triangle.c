@@ -13,10 +13,10 @@ void print_triangle(int n)
 		for (h = 1; h <= n; h++)
 		{
 			for (t = n; t > o; t++)
-				_putchar('\n');
+				_putchar(' ');
 
 			for (t = 0; t < h; t++)
-				_putchar('\n');
+				_putchar('#');
 
 			if (h == n)
 				continue;
