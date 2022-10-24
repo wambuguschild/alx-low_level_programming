@@ -2,8 +2,8 @@
 
 /**
  * print_square - print a square
- * @size: size of a square
- * #: the character used to print the square
+ * @size: size of the square
+ * @#: the character to print the square
  */
 void print_square(int size)
 {
@@ -23,7 +23,7 @@ void print_square(int size)
 			x++;
 		}
 		_putchar('\n');
-		y++;
+		y++
 	}
 	_putchar('\n');
 }
