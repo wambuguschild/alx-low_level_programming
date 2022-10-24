@@ -1,7 +1,12 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main - prints FizzBuzz
+ * main - program that prints from 1 to 100
+ * followed by new line
+ * multiples of 3 prints Fizz
+ * multiples of 5 prints Buzz
+ * multiples of 3 and 5 prints FizzBuzz
  * Return: 0
  */
 int main(void)
