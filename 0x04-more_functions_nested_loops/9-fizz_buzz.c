@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - program that prints from 1 to 100
@@ -13,17 +12,20 @@ int main(void)
 {
 	int i;
 
-	for (int i = 1; i <= 100; i++)
+	printf("1")
+	for (i = 2; i <= 100; i++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
-			printf("FizzBuzz");
-		else if (i % 3 == 0)
+		printf(" ");
+		if (i % 3 == 0)
 			printf("Fizz");
-		else if (i % 5 == 0)
+		if (i % 5 == 0)
 			printf("Buzz");
-		else
-			printf("%d ", a);
+		if (i % 5 == 0)
+			printf("Buzz");
+		if
+			(i % 3 != 0 && i % 5 != 0)
+			printf("%d ", i);
 	}
-	printf("Buzz\n");
+	printf("\n");
 	return (0);
 }
