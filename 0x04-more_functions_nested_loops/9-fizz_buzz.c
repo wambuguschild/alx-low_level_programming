@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - program that prints from 1 to 100
- * followed by new line
+ * main - prints FizzBuzz
  * multiples of 3 prints Fizz
  * multiples of 5 prints Buzz
  * multiples of 3 and 5 prints FizzBuzz
@@ -14,7 +13,7 @@ int main(void)
 
 	for (int i = 1; i <= 100; i++)
 	{
-		if (i % 15 == 0)
+		if (i % 3 == 0 && num % 5 == 0)
 		{
 			printf("FizzBuzz");
 		}
@@ -31,5 +30,6 @@ int main(void)
 			printf("%d ", i);
 		}
 	}
+	printf("\n");
 	return (0);
 }
