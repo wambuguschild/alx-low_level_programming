@@ -3,6 +3,8 @@
 /**
  * print_triangle - prints a triangle
  * @n: size of the triangle
+ * @#: the character to print the triangle
+ * Return: nothing
  */
 void print_triangle(int n)
 {
