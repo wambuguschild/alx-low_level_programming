@@ -1,1 +1,1 @@
-#static libraries
+This is the read me for this subdirectory
