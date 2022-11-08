@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,29 +5,27 @@
  * main - program that adds two positive numbers
  * @argc: number of arguments
  * @argv: array of arguments
- * Description: if no number is passed to program, print 0.
- * If one of the numbers contains non digits, print Error.
- * Return: 1 if Error, 0 if successful.
+ * Return: if one of the numbers contain symbols that are non-digits - 1.
+ * Otherwise - 0.
  */
 int main(int argc, char *argv[])
 {
-	int total, i, j;
-	int num;
+	int n, d, s = 0;
 
-	total = 0;
-	if (argc > 1)
+	for (n = 1; n < argc; n++)
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
+		for (d = 0; argv[n][d]; d++)
 		{
-			if (argv[i][j] < '0' || argv[i][j] > '9')
+			if (argv[n][d] < '0' || argv[n][d] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-		num = atoi(argv[i]);
-		total += num;
+
+		s += atoi(argv[n]);
 	}
-	printf("%d\n", total);
+	printf("%d\n", s);
+
 	return (0);
 }
