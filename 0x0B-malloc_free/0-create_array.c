@@ -25,5 +25,5 @@ char *create_array(unsigned int size, char c)
 	for (w = 0; w < size; w++)
 		j[w] = c;
 
-	return (w);
+	return (j);
 }
