@@ -10,9 +10,8 @@
  */
 int main(int argc, int argv)
 {
-	int arg1, int arg2, r;
-	char o;
-	int (*func)(int, int);
+	int a, int b;
+	char *op;
 
 	if (argc != 4)
 	{
@@ -20,27 +19,23 @@ int main(int argc, int argv)
 		exit(98);
 	}
 
-	arg1 = atoi(argv[1]);
-	arg2 = atoi(argv[2]);
+	a = atoi(argv[1]);
+	op = argv[2];
+	b = atoi(argv[3]);
 
-	func = get_op_func(argv[2]);
-
-	if (!func)
+	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	o = *argv[2];
-
-	if ((0 == '/' || o == '%') && arg2 == 0)
+	if ((*op == '\' && b == 0) || (*op == ' % ' && b == 0))
 	{
 		printf("Error\n");
 		exit(100);
 	}
-	r = func(arg1, arg2);
 
-	printf("%d\n", r);
+	printf("%d\n", get_op_func(op)(a, b));
 
 	return (0);
 }
