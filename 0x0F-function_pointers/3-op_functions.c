@@ -1,10 +1,10 @@
 #include "3-calc.h"
 
 /**
- * op_add - calculates the  sum of two intergers
+ * op_add - calculates the sum of two intergers
  * @a: first interger
  * @b: second interger
- * Return: sum of a and b
+ * Return: the sum of a and b
  */
 int op_add(int a, int b)
 {
@@ -12,7 +12,7 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - calculates the differecnce bewteen tow intergers
+ * op_sub - calculates the difference between two intergers
  * @a: first interger
  * @b: second interger
  * Return: difference of a and b
@@ -26,7 +26,7 @@ int op_sub(int a, int b)
  * op_mul - calculates the product of two intergers
  * @a: first interger
  * @b: second interger
- * Return: product of a and b
+ * Return: the product of a and b
  */
 int op_mul(int a, int b)
 {
@@ -35,9 +35,9 @@ int op_mul(int a, int b)
 
 /**
  * op_div - calculates the division of two intergers
- * @a: first integer
+ * @a: first interger
  * @b: second interger
- * Return: results of the division of a by b
+ * Return: the result of the division of a by b
  */
 int op_div(int a, int b)
 {
