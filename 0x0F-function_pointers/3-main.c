@@ -1,10 +1,9 @@
 #include "3-calc.h"
-#include <stdlib.h>
 
 /**
  * main - program that performs simple operations
  * @argc: number of arguments
- * @argv:array of arguments
+ * @argv: array of arguments
  *
  * Return: Always 0
  */
@@ -19,6 +18,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
