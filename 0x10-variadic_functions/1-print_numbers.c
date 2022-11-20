@@ -3,12 +3,14 @@
 /**
  * print_numbers - prints numbers given as parameters
  * @separator: string to be printed between numbers
- * @n: number ofintergers passed to the function
+ * @n: number of intergers passed to the function
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list list;
+
+	va_start(list, n);
 
 	for (i = 0; i < n, i++)
 	{
