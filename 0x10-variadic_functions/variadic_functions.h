@@ -2,6 +2,12 @@
 #define VARIADIC_FUNCTIONS_H
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+#include <stdio.h>
+#include <stdarg.h>
+
+>>>>>>> b7ff1ce428d2db10f8a2ce56261635968317790c
 =======
 #include <stdio.h>
 #include <stdarg.h>
@@ -13,7 +19,11 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #endif
+=======
+#endif /*VARIADIC_FUNCTIONS_H*/
+>>>>>>> b7ff1ce428d2db10f8a2ce56261635968317790c
 =======
 #endif /*VARIADIC_FUNCTIONS_H*/
 >>>>>>> b7ff1ce428d2db10f8a2ce56261635968317790c
